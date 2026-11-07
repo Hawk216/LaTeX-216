@@ -1,0 +1,31 @@
+\documentclass{article}
+\usepackage{booktabs}
+
+\title{Tables with Booktabs}
+\author{LaTeX-216 Examples}
+\date{}
+
+\begin{document}
+\maketitle
+
+The \texttt{booktabs} package provides commands for clean horizontal rules.
+Avoid vertical rules in most publication-style tables.
+
+\begin{table}[htbp]
+  \centering
+  \caption{Common commands for organizing a document.}
+  \label{tab:commands}
+  \begin{tabular}{ll}
+    \toprule
+    Command & Purpose \\
+    \midrule
+    \texttt{\textbackslash section} & Starts a numbered section \\
+    \texttt{\textbackslash label} & Marks a location for referencing \\
+    \texttt{\textbackslash ref} & Prints the number of a labeled item \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+Table~\ref{tab:commands} demonstrates a caption and a cross-reference.
+
+\end{document}
