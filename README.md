@@ -23,6 +23,10 @@ For example, compile a sample from the repository root with `pdflatex examples/f
 Run LaTeX twice when a document uses citations or cross-references so the references can settle.
 For projects that use external bibliography tools, follow that document's compilation steps.
 
+## Build all examples
+
+With `pdflatex` and `make` installed, run `make` from the repository root to compile every example and template. The generated PDFs go under `build/`; run `make clean` to remove them. GitHub Actions also compiles these files when a pull request targets `main` or a commit is pushed to `main`.
+
 ## Examples
 
 - [Functions and limits](examples/functions-and-limits.tex) — domains, factoring, limits, and continuity.
@@ -107,6 +111,13 @@ An aligned derivation:
 
 ```text
 .
+├── .github/
+│   └── workflows/
+│       └── latex.yml
+├── .gitignore
+├── CONTRIBUTING.md
+├── Makefile
+├── README.md
 ├── examples/
 │   ├── bibliography.tex
 │   ├── code-listings.tex
@@ -124,7 +135,6 @@ An aligned derivation:
 │   └── theorems-and-proofs.tex
 ├── templates/
 │   └── basic-article.tex
-└── README.md
 ```
 
 ## Contribution guidelines
@@ -134,3 +144,5 @@ An aligned derivation:
 - Prefer standard packages and portable examples.
 - Check that new examples compile before committing them.
 - Do not include private coursework, personal information, or copyrighted material without permission.
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the example, build, and pull-request workflow.
