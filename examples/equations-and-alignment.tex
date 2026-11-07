@@ -1,0 +1,35 @@
+\documentclass{article}
+\usepackage{amsmath,amssymb}
+
+\title{Equations and Alignment}
+\author{LaTeX-216 Examples}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{Aligning a derivation}
+Use the ampersand to mark the alignment point; use \\ to start each new line.
+\begin{align*}
+  (x+2)^2 &= (x+2)(x+2) \\
+          &= x^2+4x+4 \\
+          &= x(x+4)+4.
+\end{align*}
+
+\section{A system of equations}
+\begin{align}
+  2x+y &= 5, \\
+  x- y &= 1.
+\end{align}
+Adding the equations gives $3x=6$, so $x=2$ and $y=1$.
+
+\section{A piecewise function}
+\[
+  f(x)=
+  \begin{cases}
+    -x, & x<0, \\
+    x^2, & x\ge 0.
+  \end{cases}
+\]
+
+\end{document}
