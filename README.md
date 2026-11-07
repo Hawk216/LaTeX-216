@@ -4,7 +4,7 @@ A practical workspace for learning and organizing LaTeX documents, mathematical 
 
 ## What belongs here
 
-- Small, focused examples of mathematical notation
+- Small, focused examples of mathematical notation (Functions & Limits)
 - Reusable document templates
 - Notes on equations, alignment, matrices, and theorem environments
 - Examples that compile with a standard LaTeX distribution
