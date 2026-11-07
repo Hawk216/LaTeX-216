@@ -1,0 +1,34 @@
+\documentclass{article}
+\usepackage{amsmath,amssymb}
+
+\title{Derivatives and the Chain Rule}
+\author{LaTeX-216 Examples}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{Product rule}
+For $h(x)=x^2 e^x$, the product rule gives
+\begin{align*}
+  h'(x)
+    &= \frac{d}{dx}(x^2)e^x + x^2\frac{d}{dx}(e^x) \\
+    &= 2x e^x + x^2 e^x \\
+    &= e^x(x^2+2x).
+\end{align*}
+
+\section{Chain rule}
+For $q(x)=\sin(x^2)$, take the derivative of the outer function and multiply
+by the derivative of the inner function:
+\[
+  q'(x) = \cos(x^2)\cdot 2x = 2x\cos(x^2).
+\]
+
+\section{Tangent line}
+The tangent line to $q(x)=x^2$ at $x=1$ has slope $q'(1)=2$ and passes through
+$(1,1)$. Its equation is
+\[
+  y-1=2(x-1), \qquad\text{or}\qquad y=2x-1.
+\]
+
+\end{document}
