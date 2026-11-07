@@ -33,6 +33,12 @@ For projects that use external bibliography tools, follow that document's compil
 - [Theorems and proofs](examples/theorems-and-proofs.tex) — numbered theorem environments and proof formatting.
 - [Tables](examples/tables.tex) — clean tables, captions, labels, and cross-references with `booktabs`.
 - [Bibliography](examples/bibliography.tex) — citations with the built-in `thebibliography` environment.
+- [Lists](examples/lists.tex) — numbered, bulleted, and description lists.
+- [Figures](examples/figures.tex) — figure placement, captions, labels, and image insertion.
+- [Cross-references](examples/cross-references.tex) — labels for sections and equations.
+- [Sets and logic](examples/sets-and-logic.tex) — set symbols, quantifiers, and De Morgan's law.
+- [Custom math commands](examples/custom-math-commands.tex) — reusable notation and operator names.
+- [Code listings](examples/code-listings.tex) — typeset source code with the `listings` package.
 
 Start a new document with the reusable [basic article template](templates/basic-article.tex).
 
@@ -103,11 +109,17 @@ An aligned derivation:
 .
 ├── examples/
 │   ├── bibliography.tex
+│   ├── code-listings.tex
+│   ├── cross-references.tex
+│   ├── custom-math-commands.tex
 │   ├── derivatives.tex
 │   ├── equations-and-alignment.tex
+│   ├── figures.tex
 │   ├── functions-and-limits.tex
 │   ├── integrals.tex
+│   ├── lists.tex
 │   ├── matrices.tex
+│   ├── sets-and-logic.tex
 │   ├── tables.tex
 │   └── theorems-and-proofs.tex
 ├── templates/
