@@ -1,0 +1,27 @@
+\documentclass{article}
+\usepackage{amsmath,amssymb}
+
+\title{Basic Probability}
+\author{LaTeX-216 Examples}
+\date{}
+
+\begin{document}
+\maketitle
+
+For equally likely outcomes, the probability of an event $A$ is
+\[
+  P(A)=\frac{|A|}{|\Omega|}.
+\]
+
+For example, when rolling a fair six-sided die, the probability of rolling
+an even number is
+\[
+  P(\text{even})=\frac{3}{6}=\frac{1}{2}.
+\]
+
+For events $A$ and $B$, the addition rule is
+\[
+  P(A\cup B)=P(A)+P(B)-P(A\cap B).
+\]
+
+\end{document}
