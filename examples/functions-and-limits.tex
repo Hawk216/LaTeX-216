@@ -1,0 +1,36 @@
+\documentclass{article}
+\usepackage{amsmath,amssymb}
+
+\title{Functions and Limits}
+\author{LaTeX-216 Examples}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{A function and its domain}
+Consider the function
+\[
+  f(x) = \frac{x^2 - 1}{x - 1}.
+\]
+Its original expression is defined for $x \ne 1$. Factoring the numerator gives
+\[
+  f(x) = \frac{(x-1)(x+1)}{x-1} = x+1, \qquad x \ne 1.
+\]
+
+\section{A limit}
+Although $f(1)$ is not defined, its limit as $x$ approaches 1 exists:
+\begin{align*}
+  \lim_{x \to 1} \frac{x^2 - 1}{x - 1}
+    &= \lim_{x \to 1} (x+1) \\
+    &= 2.
+\end{align*}
+
+\section{Continuity}
+The function $g(x)=x^2+3x$ is a polynomial, so it is continuous for every real
+number. In particular,
+\[
+  \lim_{x \to 2} g(x) = g(2) = 2^2 + 3(2) = 10.
+\]
+
+\end{document}
