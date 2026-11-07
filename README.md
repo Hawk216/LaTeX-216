@@ -21,6 +21,38 @@ pdflatex main.tex
 
 For projects that use bibliography tools or cross-references, follow the compilation steps required by that document.
 
+## Related repositories
+
+Explore these open-source projects for LaTeX examples, editing tools, and collaboration:
+
+- [LaTeX2e](https://github.com/latex3/latex2e) — the LaTeX kernel and its development.
+- [LaTeX Workshop](https://github.com/James-Yu/LaTeX-Workshop) — LaTeX editing and preview tools for Visual Studio Code.
+- [TeXstudio](https://github.com/texstudio-org/texstudio) — a full-featured LaTeX editor.
+- [Overleaf](https://github.com/overleaf/overleaf) — the codebase for the collaborative online LaTeX editor.
+
+## LaTeX workflow
+
+```mermaid
+flowchart LR
+    A[Choose a template] --> B[Write your .tex source]
+    B --> C[Add equations and structure]
+    C --> D[Compile with LaTeX]
+    D --> E{Review the PDF}
+    E -->|Looks good| F[Share or publish]
+    E -->|Needs edits| B
+
+    classDef start fill:#d9f99d,stroke:#3f6212,color:#1a2e05,stroke-width:2px
+    classDef write fill:#a7f3d0,stroke:#047857,color:#064e3b,stroke-width:2px
+    classDef compile fill:#bae6fd,stroke:#0369a1,color:#082f49,stroke-width:2px
+    classDef review fill:#fde68a,stroke:#b45309,color:#451a03,stroke-width:2px
+    classDef finish fill:#fbcfe8,stroke:#be185d,color:#500724,stroke-width:2px
+    class A start
+    class B,C write
+    class D compile
+    class E review
+    class F finish
+```
+
 ## Example
 
 Save the following as `main.tex`:
