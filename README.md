@@ -20,13 +20,21 @@ pdflatex main.tex
 ```
 
 For example, compile a sample from the repository root with `pdflatex examples/functions-and-limits.tex`.
-For projects that use bibliography tools or cross-references, follow the compilation steps required by that document.
+Run LaTeX twice when a document uses citations or cross-references so the references can settle.
+For projects that use external bibliography tools, follow that document's compilation steps.
 
 ## Examples
 
 - [Functions and limits](examples/functions-and-limits.tex) — domains, factoring, limits, and continuity.
 - [Matrices](examples/matrices.tex) — matrix notation and solving a two-variable linear system.
 - [Derivatives](examples/derivatives.tex) — product rule, chain rule, and a tangent line.
+- [Equations and alignment](examples/equations-and-alignment.tex) — aligned derivations, systems, and piecewise functions.
+- [Integrals](examples/integrals.tex) — antiderivatives and definite integration by substitution.
+- [Theorems and proofs](examples/theorems-and-proofs.tex) — numbered theorem environments and proof formatting.
+- [Tables](examples/tables.tex) — clean tables, captions, labels, and cross-references with `booktabs`.
+- [Bibliography](examples/bibliography.tex) — citations with the built-in `thebibliography` environment.
+
+Start a new document with the reusable [basic article template](templates/basic-article.tex).
 
 ## Related repositories
 
@@ -94,11 +102,16 @@ An aligned derivation:
 ```text
 .
 ├── examples/
-│   ├── equations.tex
+│   ├── bibliography.tex
+│   ├── derivatives.tex
+│   ├── equations-and-alignment.tex
 │   ├── functions-and-limits.tex
+│   ├── integrals.tex
 │   ├── matrices.tex
-│   └── derivatives.tex
+│   ├── tables.tex
+│   └── theorems-and-proofs.tex
 ├── templates/
+│   └── basic-article.tex
 └── README.md
 ```
 
