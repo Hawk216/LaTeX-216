@@ -43,6 +43,7 @@ With `pdflatex` and `make` installed, run `make` from the repository root to com
 - [Sets and logic](examples/sets-and-logic.tex) — set symbols, quantifiers, and De Morgan's law.
 - [Custom math commands](examples/custom-math-commands.tex) — reusable notation and operator names.
 - [Code listings](examples/code-listings.tex) — typeset source code with the `listings` package.
+- [Probability](examples/probability.tex) — sample spaces, events, and the addition rule.
 
 Start a new document with the reusable [basic article template](templates/basic-article.tex).
 
@@ -130,6 +131,7 @@ An aligned derivation:
 │   ├── integrals.tex
 │   ├── lists.tex
 │   ├── matrices.tex
+│   ├── probability.tex
 │   ├── sets-and-logic.tex
 │   ├── tables.tex
 │   └── theorems-and-proofs.tex
