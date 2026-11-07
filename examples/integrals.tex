@@ -1,0 +1,28 @@
+\documentclass{article}
+\usepackage{amsmath,amssymb}
+
+\title{Integrals and Substitution}
+\author{LaTeX-216 Examples}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{An antiderivative}
+The power rule for integration gives
+\[
+  \int x^3\,dx = \frac{x^4}{4}+C,
+\]
+where $C$ is an arbitrary constant.
+
+\section{Definite integral by substitution}
+Evaluate $\int_0^1 2x(x^2+1)^2\,dx$. Let $u=x^2+1$, so $du=2x\,dx$.
+The bounds change from $x=0,1$ to $u=1,2$:
+\begin{align*}
+  \int_0^1 2x(x^2+1)^2\,dx
+    &= \int_1^2 u^2\,du \\
+    &= \left[\frac{u^3}{3}\right]_1^2 \\
+    &= \frac{7}{3}.
+\end{align*}
+
+\end{document}

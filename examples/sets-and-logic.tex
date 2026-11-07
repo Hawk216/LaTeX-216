@@ -1,0 +1,33 @@
+\documentclass{article}
+\usepackage{amsmath,amssymb}
+
+\title{Sets and Logic Notation}
+\author{LaTeX-216 Examples}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{Common set symbols}
+\[
+  A \subseteq B, \qquad x \in A, \qquad
+  A \cup B, \qquad A \cap B, \qquad A \setminus B, \qquad \emptyset.
+\]
+For example, if $A=\{1,2,3\}$ and $B=\{3,4\}$, then
+$A\cap B=\{3\}$ and $A\cup B=\{1,2,3,4\}$.
+
+\section{A quantified statement}
+The statement that every real number has a nonnegative square can be written
+\[
+  \forall x\in\mathbb{R},\quad x^2\ge 0.
+\]
+The symbol $\forall$ means ``for every,'' and $\mathbb{R}$ denotes the real
+numbers.
+
+\section{De Morgan's law}
+For sets $A$ and $B$ in a universe $U$,
+\[
+  U\setminus(A\cup B) = (U\setminus A)\cap(U\setminus B).
+\]
+
+\end{document}

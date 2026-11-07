@@ -1,0 +1,39 @@
+\documentclass{article}
+\usepackage{amsmath,amssymb,amsthm}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+
+\title{Theorems and Proofs}
+\author{LaTeX-216 Examples}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{theorem}
+The sum of two even integers is even.
+\end{theorem}
+
+\begin{proof}
+Let the even integers be $a=2m$ and $b=2n$, where $m,n\in\mathbb{Z}$.
+Then
+\[
+  a+b=2m+2n=2(m+n).
+\]
+Since $m+n$ is an integer, $a+b$ is divisible by 2 and is therefore even.
+\end{proof}
+
+\begin{lemma}
+The square of every odd integer is odd.
+\end{lemma}
+
+\begin{proof}
+Write an odd integer as $2k+1$ for some $k\in\mathbb{Z}$. Its square is
+\[
+  (2k+1)^2=2(2k^2+2k)+1,
+\]
+which has the form $2r+1$ for the integer $r=2k^2+2k$.
+\end{proof}
+
+\end{document}

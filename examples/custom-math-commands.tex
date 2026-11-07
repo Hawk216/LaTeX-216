@@ -1,0 +1,26 @@
+\documentclass{article}
+\usepackage{amsmath,amssymb}
+
+% Define short, readable commands for notation used repeatedly.
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\norm}[1]{\left\lVert #1 \right\rVert}
+\DeclareMathOperator{\rank}{rank}
+
+\title{Reusable Math Commands}
+\author{LaTeX-216 Examples}
+\date{}
+
+\begin{document}
+\maketitle
+
+The command \verb|\R| prints the real numbers: $x\in\R$.
+The command \verb|\norm{...}| formats a norm: $\norm{v+w}$.
+The operator declaration \verb|\rank| typesets an operator correctly:
+\[
+  \rank(A) \leq \min(m,n), \qquad A\in\R^{m\times n}.
+\]
+
+Defining a command once makes notation consistent and lets you update its
+format in one place. Choose names that do not conflict with existing commands.
+
+\end{document}

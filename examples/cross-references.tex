@@ -1,0 +1,22 @@
+\documentclass{article}
+\usepackage{amsmath}
+
+\title{Labels and Cross-References}
+\author{LaTeX-216 Examples}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section{A labeled equation}\label{sec:equation}
+Labels let LaTeX keep numbering consistent when content moves. For example,
+\begin{equation}\label{eq:quadratic}
+  (a+b)^2 = a^2 + 2ab + b^2.
+\end{equation}
+
+Section~\ref{sec:equation} contains Equation~\eqref{eq:quadratic}. The
+\verb|\label| command defines a reference target, while \verb|\ref| and
+\verb|\eqref| print its number. Compile this document twice so LaTeX can
+resolve the references.
+
+\end{document}

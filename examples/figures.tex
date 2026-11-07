@@ -1,0 +1,29 @@
+\documentclass{article}
+\usepackage{graphicx}
+
+\title{Figures and Images}
+\author{LaTeX-216 Examples}
+\date{}
+
+\begin{document}
+\maketitle
+
+A figure can contain an image, diagram, or other visual. This framed placeholder
+keeps the example compilable without a separate image file.
+\begin{figure}[htbp]
+  \centering
+  \fbox{%
+    \begin{minipage}[c][3cm][c]{0.75\linewidth}
+      \centering Replace this box with your image.
+    \end{minipage}%
+  }
+  \caption{A placeholder figure with a caption and label.}
+  \label{fig:placeholder}
+\end{figure}
+
+To insert an image file, replace the framed box with a command such as
+\verb|\includegraphics[width=0.75\linewidth]{my-image.png}| and put the image
+beside this \texttt{.tex} file. Figure~\ref{fig:placeholder} demonstrates how
+the caption is numbered automatically.
+
+\end{document}
