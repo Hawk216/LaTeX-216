@@ -11,7 +11,7 @@ A practical workspace for learning and organizing LaTeX documents, mathematical 
 
 ## Getting started
 
-Install a LaTeX distribution such as TeX Live or MiKTeX, then create a `.tex` file.
+Install a LaTeX distribution such as TeX Live or MiKTeX, then compile a `.tex` file.
 
 Compile a document from the command line with:
 
@@ -19,7 +19,14 @@ Compile a document from the command line with:
 pdflatex main.tex
 ```
 
+For example, compile a sample from the repository root with `pdflatex examples/functions-and-limits.tex`.
 For projects that use bibliography tools or cross-references, follow the compilation steps required by that document.
+
+## Examples
+
+- [Functions and limits](examples/functions-and-limits.tex) — domains, factoring, limits, and continuity.
+- [Matrices](examples/matrices.tex) — matrix notation and solving a two-variable linear system.
+- [Derivatives](examples/derivatives.tex) — product rule, chain rule, and a tangent line.
 
 ## Related repositories
 
@@ -58,28 +65,28 @@ flowchart LR
 Save the following as `main.tex`:
 
 ```tex
-\\documentclass{article}
-\\usepackage{amsmath, amssymb}
+\documentclass{article}
+\usepackage{amsmath, amssymb}
 
-\\title{LaTeX Mathematics Examples}
-\\author{}
-\\date{}
+\title{LaTeX Mathematics Examples}
+\author{}
+\date{}
 
-\\begin{document}
-\\maketitle
+\begin{document}
+\maketitle
 
 A simple equation:
-\\[
+\[
   a^2 + b^2 = c^2
-\\]
+\]
 
 An aligned derivation:
-\\begin{align}
+\begin{align}
   (x + 1)^2 &= x^2 + 2x + 1 \\
   &= x(x + 2) + 1
-\\end{align}
+\end{align}
 
-\\end{document}
+\end{document}
 ```
 
 ## Suggested structure
@@ -88,8 +95,9 @@ An aligned derivation:
 .
 ├── examples/
 │   ├── equations.tex
+│   ├── functions-and-limits.tex
 │   ├── matrices.tex
-│   └── aligned-derivations.tex
+│   └── derivatives.tex
 ├── templates/
 └── README.md
 ```
