@@ -1,0 +1,33 @@
+\documentclass{article}
+\usepackage{xcolor}
+\usepackage{listings}
+
+\lstset{
+  language=Python,
+  basicstyle=\ttfamily\small,
+  keywordstyle=\color{blue!70!black},
+  commentstyle=\color{green!40!black},
+  numbers=left,
+  numberstyle=\tiny,
+  frame=single,
+  breaklines=true,
+  showstringspaces=false
+}
+
+\title{Code Listings}
+\author{LaTeX-216 Examples}
+\date{}
+
+\begin{document}
+\maketitle
+
+The \texttt{listings} package formats source code without requiring shell
+escape. The following Python snippet is typeset as text; LaTeX does not execute
+it.
+\begin{lstlisting}
+def square_sum(values):
+    # Return the sum of the squares.
+    return sum(value ** 2 for value in values)
+\end{lstlisting}
+
+\end{document}
